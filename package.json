@@ -1,0 +1,41 @@
+{
+  "name": "aarucard",
+  "version": "1.0.0",
+  "description": "Official nowplaying card for Aaru!",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "tsup --config tsup-config.json",
+    "postbuild": "cp -r ./fonts ./dist/"
+  },
+  "author": "AikooNee",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.53",
+    "cropify": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AikooNee/aarucard"
+  },
+  "bugs": {
+    "url": "https://github.com/AikooNee/aarucard/issues"
+  }
+}
