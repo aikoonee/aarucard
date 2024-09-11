@@ -23,4 +23,4 @@ const attachment = new AttachmentBuilder(aarucard, { name: "aarucard.png" });
 
 Preview:
 
-![AaruCard](https://imgur.com/wFNKzLc.png)
+![AaruCard]()
