@@ -50,7 +50,7 @@ const AaruCard = async (options: AaruCardOption): Promise<Buffer> => {
 
     ctx.drawImage(thumb, 45, 40, 480, 480);
     
-    ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
     ctx.beginPath();
     ctx.moveTo(587, 40);
     ctx.arcTo(1667, 40, 1667, 520, 20);
